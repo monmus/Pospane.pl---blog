@@ -1,0 +1,23 @@
+@import "partials/global";
+@import "partials/colors";
+
+// ABOUT MAIN SITE
+
+.about {
+    .paragraph {
+      font-family: 'Montserrat', sans-serif;
+      span {
+        font-weight: bold;
+      }
+    }
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 400px;
+       
+      }
+    }
+  }
+  

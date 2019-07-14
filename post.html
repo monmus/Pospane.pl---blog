@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>wyspani</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&amp;subset=latin-ext" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<script>
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-opacity-off";
+    }
+</script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<section class="header1" id="start">
+
+  <nav>
+  <img src="images/logo.png" alt="logo" class="logo-sm">
+    <div class="nav-links">
+      <a class="nav-link" href="#aboutme">cześć</a>
+      <a class="nav-link" href="#section-two">relacje</a>
+      <a class='nav-link' href="/home/monika/Pulpit/myproject5/index.html"><img src="images/logo.png" alt='logo'></a>
+      <a class="nav-link" href="#myextra">a dodatkowo</a>
+      <a class="nav-link" href="#form">kontakt</a>
+    </div>
+    <div class="nav-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+
+  <div class="introduction">
+    <div class="introduction-box">
+    </div>
+  </div>
+
+  <!-- <div class="arrow-box"><a href="#aboutme" class="arrow"></a></div> -->
+
+</section>
+
+ 
+<!-- ABOUT -->
+
+<section class="about1" id="aboutme">
+
+  <div class="container">
+    <div class="row">
+        <h3 class="headline">Izrael</h3>
+        <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sunt recusandae at aliquid laborum corrupti reiciendis saepe illum, iusto perferendis consequatur, mollitia dolorum optio blanditiis ad. Perspiciatis, laborum atque! Numquam.<br><br>
+        Dlaczego<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio explicabo quasi repudiandae magnam aliquam, consequatur suscipit voluptas earum commodi quam sed. Omnis voluptates eos, amet suscipit incidunt doloribus repellat sit.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nemo harum quo ea, voluptatem labore repellendus fugit a quisquam, numquam deleniti in corporis veniam aliquid at consequuntur inventore! Beatae, sit?
+       <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias autem, dicta asperiores aperiam quos, quam corporis, atque aliquam consectetur veritatis. Voluptas, blanditiis! Fugit sequi amet modi voluptas nobis ducimus!
+        </p>
+      </div>
+      <!-- <div class="col-md-5 col-lg-6 photo-container">
+        <img src="./images/drogawdolinie.jpg" alt="my photo">
+      </div> -->
+  </div>
+
+</section>
+
+<section class='relation1' id='section-two'>
+
+  <div class='container'>
+    <h3 class="headline">Co zobaczyć?</h3>
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quis exercitationem perferendis nam quibusdam. Maxime libero recusandae beatae, est delectus ullam quae cumque iste. Rem laborum fugit iusto neque eaque.</p>
+  </div>
+
+</section>
+
+<!-- OPINIONS -->
+
+<section class="opinions" id="feedback">
+
+  <!-- <article> -->
+      <div class="w3-content" style="max-width:1200px">
+          <img class="mySlides" src="images/usa1.jpg" style="width:100%;display:none">
+          <img class="mySlides" src="images/usa2.jpg" style="width:100%">
+          <img class="mySlides" src="images/usa5.jpg" style="width:100%;display:none">
+          <img class="mySlides" src="images/usa4.jpg" style="width:100%;display:none">
+          <img class="mySlides" src="images/usa6.jpg" style="width:100%;display:none">
+          <img class="mySlides" src="images/usabeach.jpg" style="width:100%;display:none">
+          <div class="w3-row-padding w3-section">
+            <div class="w3-col s4" style='padding: 8px'>
+              <img class="demo w3-opacity w3-hover-opacity-off" src="images/usa1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+            </div>
+            <div class="w3-col s4"style='padding: 8px'>
+              <img class="demo w3-opacity w3-hover-opacity-off" src="images/usa2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+            </div>
+            <div class="w3-col s4"style='padding: 8px'>
+              <img class="demo w3-opacity w3-hover-opacity-off" src="images/usa5.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+            </div>
+            <div class="w3-col s4"style='padding: 8px'>
+              <img class="demo w3-opacity w3-hover-opacity-off" src="images/usa4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+            </div>
+            <div class="w3-col s4"style='padding: 8px'>
+              <img class="demo w3-opacity w3-hover-opacity-off" src="images/usa6.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+            </div>
+            <div class="w3-col s4"style='padding: 8px'>
+              <img class="demo w3-opacity w3-hover-opacity-off" src="images/usabeach.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+            </div>
+          </div>
+      </div>
+  
+  <!-- </article> -->
+
+</section>
+
+
+<section class="about1" id="aboutme">
+
+  <div class="container">
+    <div class="row">
+        <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sunt recusandae at aliquid laborum corrupti reiciendis saepe illum, iusto perferendis consequatur, mollitia dolorum optio blanditiis ad. Perspiciatis, laborum atque! Numquam.<br><br>
+        Dlaczego<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio explicabo quasi repudiandae magnam aliquam, consequatur suscipit voluptas earum commodi quam sed. Omnis voluptates eos, amet suscipit incidunt doloribus repellat sit.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nemo harum quo ea, voluptatem labore repellendus fugit a quisquam, numquam deleniti in corporis veniam aliquid at consequuntur inventore! Beatae, sit?
+       <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias autem, dicta asperiores aperiam quos, quam corporis, atque aliquam consectetur veritatis. Voluptas, blanditiis! Fugit sequi amet modi voluptas nobis ducimus!
+        </p>
+      </div>
+      <!-- <div class="col-md-5 col-lg-6 photo-container">
+        <img src="./images/drogawdolinie.jpg" alt="my photo">
+      </div> -->
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id='form' class='contact'>
+
+<article class="contacttext-wrapper">
+  <h2 class="contacttext-header">Kontakt Info:  </h2>
+  <p class="contacttext-main">Praesent interdum congue mauris, et fringilla lacus pel vitae. Quisque nisl mauris, aliquam eu ultrices vel, conse vitae sapien at imperdiet risus. Quisque cursus risus id. fermentum, in auctor quam consectetur.</p>
+  <p><span>Address:   </span>
+    <span> Krakow</span>
+  </p>
+  <p>
+    <span>Phone: </span>
+    <span>  +12 122 122 908 </span>
+  </p>
+  <p>
+    <span>Email: </span>
+    <span>  monikmusial@gmail.com</span>
+  </p>
+  <div class="social-icons">
+    <div class="wrapper">
+      <a class="fb" href="https://www.facebook.com/" target="blank">
+        <img src="./images/fb.png">
+      </a>
+        <a class="insta" href="https://www.instagram.com/" target="blank">
+          <img src="./images/insta.png">
+        </a>
+    </div>
+  </div>
+  </article>
+  <article class="contact-form">
+    <form class="form">
+      <input value="" placeholder="Your name:" type="text">
+      <input value="" placeholder="Your e-mail:" type="text">
+      <textarea placeholder="Write a message">
+
+      </textarea>
+      <button>wyślij wiadomość</button>
+    </form>
+  </article>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<section class="footer">
+  <p>©2019 wyspani</p>
+  <img src="images/logo.png" alt="logo">
+</section>
+
+<script src="./js/script.js"></script>
+
+</body>
+
+</html>

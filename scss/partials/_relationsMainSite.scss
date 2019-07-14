@@ -1,0 +1,116 @@
+@import "partials/global";
+@import "partials/colors";
+
+//RELACJE 
+
+// .col .col-12 {
+//     background-color: $background-color;
+//     text-align: center;
+//     h3{
+//       text-align: center;
+//     }
+//     // .relations-desc {
+//     //   margin-bottom: 3rem;
+//     // }
+//   }
+  
+  .section-two {
+    font-size: 0;
+    margin: 15px;
+    cursor: pointer;
+    .tiles-row {
+      display: flex;
+      width: 100%;
+    
+      @media only screen and (max-width: 1023px ){
+        flex-wrap: wrap;
+      }
+  
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #070707;
+        a{
+          text-decoration: none;
+        }
+      }
+  
+      .article-container:hover .overlay {
+        opacity: 0.8;
+        .small-text{
+          transform: translateY(0);
+        }
+      }
+  
+      .article-container{
+        position: relative;
+      }
+  
+      .text-image {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        .main-text{
+          color: white;
+          font-size: 1.8rem;
+          &:hover{
+            color: red;
+          }
+  
+        }
+        .small-text {
+          color: #c87b39;
+          font-size: 1rem;
+          transform: translateY(10px);
+          transition: all 1s ease-out;
+          &:hover{
+            color: red;
+          }
+        }
+      }
+  
+      .small-container {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        @media only screen and (max-width: 1023px){
+          width: 100%;
+        }
+        .article-container{
+          width: 50%;
+        }
+        .small-image{
+          height: 50vh;
+          width: 100%;
+        }
+      }
+  
+      // .small-container {
+      //   width: 50%;
+      //   display: flex;
+      //   flex-wrap: wrap;
+      //   @media only screen and (max-width: 1023px ){
+      //     width: 100%;
+      //   }
+      //   .small-image {
+      //     width: 100%;
+      //     height: 50vh;
+      //   }
+      //   .article-container{
+      //     width: 50%;
+      //   }
+      // }
+    }
+  }
+  

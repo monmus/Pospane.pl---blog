@@ -1,0 +1,38 @@
+@import "partials/global";
+@import "partials/colors";
+@import "partials/headerMainSite";
+@import "partials/headerPost";
+@import "partials/aboutPost";
+@import "partials/opinionsPost";
+@import "partials/aboutMainSite";
+@import "partials/relationsMainSite";
+@import "partials/extraMainSite";
+@import "partials/contact";
+@import "partials/footer";
+@import "partials/mediaQuries";
+
+// Arrow
+
+.arrow-box {
+  display: block;
+  bottom: 20px;
+  width: 100%;
+  position: absolute;
+  animation: down 2.5s infinite ease;
+  background-color: rgb(250, 212, 141);
+  .arrow {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 15px auto;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes down {
+  from { transform: translateY(0); opacity: 0.5;}
+  50% { transform: translateY(10px); opacity: 1}
+  to { transform: translateY(0); opacity: 0.5;}
+}

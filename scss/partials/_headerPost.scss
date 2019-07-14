@@ -1,0 +1,128 @@
+@import "partials/global";
+@import "partials/colors";
+
+
+// *************************************************************************************
+// HEADER post ********************************************************************
+
+.header1 {
+    font-family: 'Montserrat', sans-serif;
+    height: 7vh;
+    .logo {
+      position: absolute;
+      top: 14px;
+      left: 12px;
+      color: #545454;
+      i.fas {
+        font-size: 1.2em;
+      }
+    }
+    nav {
+      background-color: #fff;
+      padding-bottom: 0.5rem;
+      height: 67px;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+        img.logo-sm {
+          display: none;
+        }
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img{
+          vertical-align: middle;
+        }
+        .nav-link {
+          padding: 0.6rem 0 0.3rem 0;
+          margin: 0 2rem 0 2rem;
+          color: $main-color;
+          font-size: 1.2em;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: $main-color;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+          }
+          &:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+          }
+        }
+      }
+      // Hamburger menu icon
+      .nav-icon {
+        display: none;
+        width: 40px;
+        height: 45px;
+        position: relative;
+        margin: 20px 23px 0 0;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        span {
+          display: block;
+          position: absolute;
+          height: 3px;
+          width: 100%;
+          background: $main-color;
+          border-radius: 9px;
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          transition: .2s ease-in-out;
+          &:nth-child(1) {
+            top: 0px;
+          }
+          &:nth-child(2), &:nth-child(3) {
+            top: 12px;
+          }
+          &:nth-child(4) {
+            top: 24px;
+          }
+        }
+        &.open {
+          span {
+            &:nth-child(1) {
+              top: 12px;
+              width: 0%;
+              left: 50%;
+            }
+            &:nth-child(2) {
+              transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+              transform: rotate(-45deg);
+            }
+            &:nth-child(4) {
+              top: 12px;
+              width: 0%;
+              left: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Introduction animation
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blick-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0a6f73 }
+  }
+  

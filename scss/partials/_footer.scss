@@ -1,0 +1,18 @@
+@import "partials/global";
+@import "partials/colors";
+
+
+// FOOTER
+
+.footer {
+    background-color: #313335;
+    height: 10rem;
+    color: white;
+    display: flex;
+    position: relative;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+   
+  }
