@@ -87,8 +87,13 @@
         @media only screen and (max-width: 1023px){
           width: 100%;
         }
+       
         .article-container{
           width: 50%;
+
+          @media only screen and (max-width: 550px){
+            width: 100%;
+          }
         }
         .small-image{
           height: 50vh;
