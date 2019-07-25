@@ -20,6 +20,11 @@
       height: unset;
       min-height: 800px;
     }
+    @media only screen and (max-width: 400px) {
+      height: unset;
+      height: 133vh;
+      padding: 4px;
+    }
     article {
       width: 50%;
       @media only screen and (max-width: 1023px) {
@@ -61,6 +66,9 @@
         width: 100%;
         @media only screen and (max-width: 1023px) {
           align-items: center;
+        }
+        @media only screen and (max-width: 400px) {
+          height: 46vh;
         }
         input,
         textarea{
